@@ -1,0 +1,46 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+#footer {background: var(--mono-ff); padding:70px 0 30px; color:var(--mono-1-66);}
+#footer > div{display:flex; justify-content: space-between;}
+#footer .f_left{display:flex; flex-direction: column; gap: 18px;}
+#footer .f_left .guide{display:flex; align-items: center; gap:16px; font-size: 11px; margin-top: 12px;}
+#footer .f_left .company{font-size:12px; line-height: 1.83;}
+#footer .f_left .company .info_tit{margin-left:10px;}
+#footer .f_left .company span:nth-of-type(1) .info_tit, #footer .f_left .company span:nth-of-type(5) .info_tit{margin:0;}
+#footer .f_left .copyright{font-size:11px; font-weight: 500;}
+#footer .f_right{display:flex; flex:1; justify-content:flex-end;}
+#footer .f_right img{margin-right:8px; width: 14px; height: auto; vertical-align: bottom; filter:contrast(0.2);}
+#footer .f_right span{font-size:12px;color:var(--mono-1-66);}
+#footer .f_left .guide a {color:var(--mono-1-66);}
+.site-below-footer-wrap {padding:0 !important;}
+#footer .f_left .company.RW > span:nth-of-type(1),
+#footer .f_left .company.RW > span:nth-of-type(5) {margin:0 !important;}
+#footer .f_right.RW a {color:#666;}
+
+
+@media all and (max-width:1024px) {
+    
+    #footer{border-top: none; padding: 0 0 50px;}
+    #footer > div{flex-direction: column; padding: 0 12px;}
+    #footer .f_left{gap:16px;}
+	#footer .f_left .guide{position:relative; padding:13px 0; margin-top:0; text-align:center;}
+    #footer .f_left .guide:before{content:''; display:block; background:var(--mono-4-dd); width:100vw; height:1px; position:absolute; top:0; left: 50%; transform: translateX(-50%);}
+    #footer .f_left .guide:after{content:''; display:block; background:var(--mono-4-dd); width:100vw; height:1px; position:absolute; bottom:0; left: 50%; transform: translateX(-50%);}
+    #footer .f_left .guide li{display: inline-block; margin-right: 16px;}
+    #footer .f_left .guide li:last-child{margin-right:0;}
+    #footer .f_left .copyright{display: flex; justify-content: space-between; align-items: center; color:#000;}
+    #footer .f_left .company{color:var(--mono-1-66); line-height:1.66; text-align:left;}
+    #footer .f_left .company h3{font-size:12px; color:var(--mono-00); font-weight:700; margin-bottom:12px;}
+    #footer .f_left .company .info_tit{margin-left: 6px;}
+	
+    #footer .f_left .company.RTMB p > span:nth-of-type(1),
+	#footer .f_left .company.RTMB p > span:nth-of-type(2),
+	#footer .f_left .company.RTMB p > span:nth-of-type(3),
+	#footer .f_left .company.RTMB p > span:nth-of-type(5),
+	#footer .f_left .company.RTMB p > span:nth-of-type(7) {margin:0 !important;}
+    #footer .f_left .guide a {color:#000;}
+	
+	.copyright img {width:18px;}
+}
+</style>
+<!-- end Simple Custom CSS and JS -->

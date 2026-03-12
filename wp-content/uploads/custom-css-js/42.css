@@ -1,0 +1,80 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+@charset "utf-8";
+
+.dimmed { display:none; z-index:1000; position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; background:rgba(0,0,0,0.6); }
+
+/********************* Mobile *********************/
+@media all and (max-width:767px) {
+    /* responsive class */
+    .RTI, .RTB, .RTIB { display:none !important; }
+    .RMB { display:block !important; }
+    .RMI { display:inline !important; }
+    .RMIB { display:inline-block !important; }
+    
+    /* IOS Safari bug Fix */
+    body { -webkit-text-size-adjust:100%; -moz-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+}
+
+/********************* Mobile / Tablet *********************/
+@media all and (max-width:1024px) {
+    /* responsive class */
+	.RWI, .RW, .RWB, .RWIB { display:none !important; }
+    .RTMB { display:block !important; }
+    .RTMI { display:inline-block !important; }
+
+    /* layout */
+	.ons_inner_mo {width:100%; padding: 0 12px; box-sizing:border-box;}
+    #contents {position:relative; padding: 40px 0px 100px;}
+    main#contents { padding-bottom:0; }    
+    
+    /* mobileaction */
+    .xans-layout-mobileaction { position:absolute; top:-30px; left: 0; }
+    .xans-layout-mobileaction a .icon {width:10px; height:10px;}
+    #detail .xans-layout-mobileaction { top:16px; }
+    
+    #capp-shop-new-product-optionselect-layer { position:fixed !important; top:0 !important; right:0 !important; left:auto !important; width:100% !important; height:100% !important; margin:0 !important; }
+}
+
+/********************* Tablet *********************/
+@media all and (min-width:768px) and (max-width:1024px) {
+    /* responsive class */
+    .RMI, .RMB, .RMIB { display:none !important; }
+    .RTI { display:inline !important; }
+    .RTB { display:block !important; }
+    .RTIB { display:inline-block !important; }
+
+}
+
+/********************* PC *********************/
+@media all and (min-width:1024px) {
+    /* responsive class */
+    .RMI, .RMB, .RMIB, .RTI, .RTB, .RTIB, .RTMI, .RTMB { display:none !important; }
+    .RWI { display:inline !important; }
+    .RWB { display:block !important; }
+    .RWIB { display:inline-block !important; }
+
+    /* layout */
+    .ons_cont_inner {width: 88%; max-width: 1365px; margin: 0 auto;}
+    .ons_inner {width: 90%; max-width: 1280px; margin: 0 auto;}
+    #contents {padding: 60px 0px 120px;}
+    main#contents .ons_inner{width: 88%; max-width: 1280px; margin: 0 auto;}
+	.ast-builder-grid-row.ast-builder-grid-row-has-sides.ast-grid-center-col-layout {width:90%; max-width:1280px; margin:0 auto;}
+}
+
+
+/********************* PC *********************/
+@media all and (min-width:1921px) {
+    body { margin:0 auto; }
+}
+
+#modalBackpanel { display:none; position:absolute; top:0; left:0; z-index:10000; width:100%; height:100%; background:#000; }
+#modalContainer { display:none; position:absolute; top:100px; left:100px; z-index:10001; width:975px; height:720px; border:1px solid #333; background:#fff; }
+#modalContainer #modalContent { width:100%; height:100%; }
+
+.ast-container {max-width:100% !important; padding: 0 !important;}
+.e-con>.e-con-inner {width:100%; max-width: 100% !important;}
+.e-con.e-flex {--flex-wrap: auto !important;}
+.entry-content ul, .entry-content ol {padding: inherit !important;margin:auto !important;padding-left: 0 !important;}
+.body {overflow-x:hidden;}</style>
+<!-- end Simple Custom CSS and JS -->
