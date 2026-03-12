@@ -1,5 +1,6 @@
 <!-- start Simple Custom CSS and JS -->
 <style type="text/css">
+#footer {border-top:1px solid var(--mono-4-dd);}
 #footer {background: var(--mono-ff); padding:70px 0 30px; color:var(--mono-1-66);}
 #footer > div{display:flex; justify-content: space-between;}
 #footer .f_left{display:flex; flex-direction: column; gap: 18px;}
