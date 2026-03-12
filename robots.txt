@@ -3,6 +3,6 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://livomarketing.local/sitemap_index.xml
+Sitemap: /livomarketing/sitemap_index.xml
 # ---------------------------
 # END YOAST BLOCK
